@@ -1,9 +1,9 @@
 import React from 'react'
-import {DocsThemeConfig} from 'nextra-theme-docs'
 import logoPic from "/public/imgs/logo.png"
 import Image from "next/image";
 import Link from 'next/link';
 import {css} from "@kuma-ui/core";
+import {DocsThemeConfig, useConfig} from "nextra-theme-docs";
 
 
 const config: DocsThemeConfig = {
@@ -15,11 +15,15 @@ const config: DocsThemeConfig = {
       </span>
         </>
     ),
-    head: (
-        <link rel="icon" href="/public/imgs/logo.png" type="image/png"></link>
-    ),
+    head: () => {
+        return (
+            <>
+                <title>NEAUACM项目部</title>
+            </>
+        )
+    },
     footer: {
-        text: (
+        content: (
             <div className={css`display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -37,21 +41,18 @@ const config: DocsThemeConfig = {
 
         )
     },
-    primaryHue: 213,
-    i18n: [
-        {locale: 'zh-CN', text: '中文'},
-    ],
     docsRepositoryBase: 'https://github.com/Unknowns-Club/projdept_website/tree/master',
-    useNextSeoProps() {
-        return {
-            titleTemplate: '%s – NEAUACM项目部'
-        }
-    },
     editLink: {
-        text: "编辑当前文档"
+        component: null
+    },
+    i18n: [
+        {locale: 'zh-CN', name: '中文'}
+    ],
+    search: {
+        placeholder: '搜索'
     },
     feedback: {
-        content: "文档反馈",
+        content: null
     },
     toc: {
         title: "目录",

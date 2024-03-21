@@ -76,31 +76,6 @@ export const Hero = () => {
                 >
                     (you) ={">"} learn(you, project);
                 </Text>
-                <Box
-                    p={40}
-                    display="flex"
-                    flexDir={["column", "row"]}
-                    mx="auto"
-                    justify="center"
-                    gap="1rem"
-                >
-                    <Link
-                        href="/doc/team/enter_guide"
-                        bg="#292e32"
-                        color="white"
-                        px="1.5rem"
-                        lineHeight="45px"
-                        borderRadius="6px"
-                        textAlign="center"
-                        cursor="pointer"
-                        fontWeight={600}
-                        _hover={{
-                            opacity: 0.9,
-                        }}
-                    >
-                        查阅文档
-                    </Link>
-                </Box>
             </Box>
             <Box as="section" mt="5rem">
                 <Box
