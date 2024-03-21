@@ -85,7 +85,7 @@ export const Hero = () => {
                     gap="1rem"
                 >
                     <Link
-                        href="/doc/enter_guide"
+                        href="/doc/team/enter_guide"
                         bg="#292e32"
                         color="white"
                         px="1.5rem"

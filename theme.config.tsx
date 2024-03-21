@@ -40,6 +40,7 @@ const config: DocsThemeConfig = {
     i18n: [
         {locale: 'zh-CN', text: '中文'},
     ],
+    docsRepositoryBase: 'https://github.com/Unknowns-Club/projdept_website/tree/master/pages/doc',
     useNextSeoProps() {
         return {
             titleTemplate: '%s – NEAUACM项目部'
