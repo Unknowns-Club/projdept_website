@@ -37,14 +37,21 @@ const config: DocsThemeConfig = {
 
         )
     },
+    primaryHue: 213,
     i18n: [
         {locale: 'zh-CN', text: '中文'},
     ],
-    docsRepositoryBase: 'https://github.com/Unknowns-Club/projdept_website/tree/master/pages/doc',
+    docsRepositoryBase: 'https://github.com/Unknowns-Club/projdept_website/tree/master',
     useNextSeoProps() {
         return {
             titleTemplate: '%s – NEAUACM项目部'
         }
+    },
+    editLink: {
+        text: "编辑当前文档"
+    },
+    feedback: {
+        content: "文档反馈",
     }
 }
 
