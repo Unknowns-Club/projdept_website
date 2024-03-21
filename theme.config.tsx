@@ -52,6 +52,9 @@ const config: DocsThemeConfig = {
     },
     feedback: {
         content: "文档反馈",
+    },
+    toc: {
+        title: "目录",
     }
 }
 
