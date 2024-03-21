@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-server": "npm install && next build && next start"
+    "build-server": "yarn install && next build && next start"
   },
   "author": "Unknowns Club",
   "license": "MIT",
