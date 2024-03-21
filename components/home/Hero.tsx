@@ -32,6 +32,21 @@ export const Hero = () => {
                     />
                 </Box>
                 <Heading
+                    fontSize={["1.25rem", "2.25rem"]}
+                    fontWeight={800}
+                    className={css`
+                        letter-spacing: -0.025em;
+                        background-image: linear-gradient(to right, skyblue, pink);
+                        background-clip: text;
+                        color: transparent;
+                        @media (max-width: sm) {
+                            line-height: 2.5rem;
+                        }
+                    `}
+                >
+                    NEAUACM Project-Dept
+                </Heading>
+                <Heading
                     fontSize={["2.25rem", "3.25rem"]}
                     fontWeight={800}
                     className={css`
@@ -42,7 +57,7 @@ export const Hero = () => {
                         }
                     `}
                 >
-                    需要一些文案
+                    东北农业大学 ACM 集训队项目部
                 </Heading>
                 <Text
                     color="#718096"
@@ -56,9 +71,10 @@ export const Hero = () => {
                     `}
                     style={{
                         mixBlendMode: isDark[0] ? "plus-lighter" : "initial",
+                        fontFamily: "monospace",
                     }}
                 >
-                    呃呃，也需要一些文案
+                    (you) ={">"} learn(you, project);
                 </Text>
                 <Box
                     p={40}
@@ -69,7 +85,7 @@ export const Hero = () => {
                     gap="1rem"
                 >
                     <Link
-                        href="/docs"
+                        href="/doc/guide"
                         bg="#292e32"
                         color="white"
                         px="1.5rem"
@@ -171,6 +187,6 @@ const gridData = [
     {
         emoji: "🤝",
         title: "参与软件项目",
-        description: "参与软件项目开发任务，学习现代协作开发技术，锻炼团队写作能力。",
+        description: "参与软件项目开发任务，学习现代协作开发技术，锻炼团队协作能力。",
     },
 ];
