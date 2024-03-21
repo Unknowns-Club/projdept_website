@@ -10,8 +10,6 @@ export const Hero = () => {
         isDark[1](html.style.colorScheme === "dark");
         const observer = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
-                // 'colorScheme' is not a standard style property, but we monitor it here
-                // because 'nextra-theme-docs' applies its own color scheme settings.
                 isDark[1](html.style.colorScheme === "dark");
             });
         });
@@ -44,7 +42,7 @@ export const Hero = () => {
                         }
                     `}
                 >
-                    Empower Your Web with Ultimate Performance and Flexibility
+                    需要一些文案
                 </Heading>
                 <Text
                     color="#718096"
@@ -60,9 +58,7 @@ export const Hero = () => {
                         mixBlendMode: isDark[0] ? "plus-lighter" : "initial",
                     }}
                 >
-                    With Kuma UI's headless, zero-runtime UI components, build
-                    top-performing websites effortlessly, while enjoying the best
-                    developer experience. Say hello to the future of CSS-in-JS
+                    呃呃，也需要一些文案
                 </Text>
                 <Box
                     p={40}
@@ -79,7 +75,6 @@ export const Hero = () => {
                         px="1.5rem"
                         lineHeight="45px"
                         borderRadius="6px"
-                        height="3rem"
                         textAlign="center"
                         cursor="pointer"
                         fontWeight={600}
@@ -87,7 +82,7 @@ export const Hero = () => {
                             opacity: 0.9,
                         }}
                     >
-                        Get Started
+                        查阅文档
                     </Link>
                 </Box>
             </Box>
@@ -145,37 +140,37 @@ export const Hero = () => {
 
 const gridData = [
     {
-        emoji: "⚡️",
-        title: "Zero-runtime",
+        emoji: "✨",
+        title: "Web 前端",
         description:
-            "Deliver blazing-fast websites with zero-runtime CSS extraction.",
-    },
-    {
-        emoji: "🔮",
-        title: "Autocomplete",
-        description: "Experience seamless development with style autocompletion.",
+            "学习基于 JavaScript 和 Vue/React 框架的现代前端开发技术，包括页面设计、数据请求、构建工具链等。",
     },
     {
         emoji: "🛠️",
-        title: "Headless Components",
-        description:
-            "Enjoy maximum customization freedom with our headless components.",
+        title: "Web 后端",
+        description: "学习基于 Go 语言的全面后端开发技能，包括服务端开发、数据库设计、API 设计等。",
     },
     {
-        emoji: "🤝",
-        title: "Hybrid Approach",
+        emoji: "📱",
+        title: "跨平台客户端",
         description:
-            "The best of both worlds—support for any writing style with our hybrid approach.",
-    },
-    {
-        emoji: "🚀",
-        title: "RSC Support",
-        description:
-            "Stay updated with cutting-edge Next.js technology via our RSC support.",
+            "学习基于 Flutter 的跨平台客户端开发技能，包括 Dart 语言、UI/UX 设计、路由导航等。",
     },
     {
         emoji: "🥇",
-        title: "Familiar DX",
-        description: "Delight in the ultimate DX with our familiar API design.",
+        title: "DevOps",
+        description:
+            "学习现代开发技术及部署方式，包括 CI/CD、容器、Docker、自动化测试、自动化监控等。",
+    },
+    {
+        emoji: "💻",
+        title: "人工智能与机器学习",
+        description:
+            "学习基本的机器学习、深度学习概念，使用 TensorFlow、PyTorch 构建模型等。",
+    },
+    {
+        emoji: "🤝",
+        title: "参与软件项目",
+        description: "参与软件项目开发任务，学习现代协作开发技术，锻炼团队写作能力。",
     },
 ];
