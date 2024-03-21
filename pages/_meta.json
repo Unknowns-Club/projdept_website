@@ -3,8 +3,12 @@
     "title": "主页",
     "type": "page"
   },
-  "document": {
+  "doc": {
     "title": "文档",
+    "type": "page"
+  },
+  "team": {
+    "title": "队伍",
     "type": "page"
   },
   "about": {
