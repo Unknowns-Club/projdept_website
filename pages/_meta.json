@@ -15,9 +15,6 @@
     "title": "关于",
     "type": "page"
   },
-  "---": {
-    "type": "separator"
-  },
   "tools": {
     "title": "工具",
     "type": "menu",
