@@ -1,4 +1,4 @@
-import {Box, Heading, css, Text, Link} from "@kuma-ui/core";
+import {Box, Heading, css, Text} from "@kuma-ui/core";
 import {useEffect, useState} from "react";
 
 
