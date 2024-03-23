@@ -29,13 +29,12 @@ const config: DocsThemeConfig = {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+                font-size: small;
                 gap: 1em`
             }>
                 <div>
-                    Copyright © 2024 NEAU ACM Team
-                </div>
-                <div>
-                    <Link href="https://beian.miit.gov.cn/#/Integrated/index">黑ICP备2023004156号</Link>
+                    Copyright © 2024 NEAU ACM Team | <Link
+                    href="https://beian.miit.gov.cn/#/Integrated/index">黑ICP备2023004156号</Link>
                 </div>
             </div>
 
