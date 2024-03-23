@@ -3,7 +3,7 @@ import logoPic from "/public/imgs/logo.png"
 import Image from "next/image";
 import Link from 'next/link';
 import {css} from "@kuma-ui/core";
-import {DocsThemeConfig, useConfig} from "nextra-theme-docs";
+import {DocsThemeConfig} from "nextra-theme-docs";
 
 
 const config: DocsThemeConfig = {
