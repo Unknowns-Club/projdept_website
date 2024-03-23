@@ -1,8 +1,8 @@
 export default {
     "index": {
-        title: "欢迎"
+        title: "文档建设"
     },
-    "joining": {
-        title: "入队指南"
+    "team": {
+        title: "集训队相关",
     }
 }
