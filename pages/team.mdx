@@ -1,28 +1,7 @@
-import {Callout} from 'nextra/components';
+import {MemberCard} from "../components/team/MemberCard";
+import {Heading, HStack, Spacer, Text} from "@kuma-ui/core";
+import {TeamList} from "../components/team/TeamList";
 
-# 队伍组成
+<Heading fontSize={32} fontWeight="bold" my={32}>队伍组成</Heading>
 
-<Callout type="info" emoji="ℹ️">
-    排名不分先后。
-</Callout>
-
-## 教练
-- 李晓明
-
-## 学生教练
-- 李子豪
-- 霍欣彤
-
-## 队长
-- 陈玟杏
-
-## 副队长
-- 韩玉坤
-- 杨博宇
-
-## 正式队员
-- 李俊翔
-- 刘来熙
-
-## 预备队员
-- 待选拔
+<TeamList/>
