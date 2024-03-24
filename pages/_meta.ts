@@ -3,6 +3,10 @@ export default {
         "title": "主页",
         "type": "page"
     },
+    "news": {
+        "title": "公告",
+        "type": "page"
+    },
     "doc": {
         "title": "文档",
         "type": "page"
