@@ -15,13 +15,11 @@ const config: DocsThemeConfig = {
       </span>
         </>
     ),
-    head: () => {
-        return (
-            <>
-                <title>NEAUACM项目部</title>
-            </>
-        )
-    },
+    head: () =>
+        <>
+            <title>NEAUACM项目部</title>
+        </>
+    ,
     footer: {
         content: (
             <div className={css`display: flex;
@@ -44,9 +42,6 @@ const config: DocsThemeConfig = {
     editLink: {
         component: null
     },
-    i18n: [
-        {locale: 'zh-CN', name: '中文'}
-    ],
     search: {
         placeholder: '搜索'
     },
@@ -54,7 +49,7 @@ const config: DocsThemeConfig = {
         content: null
     },
     toc: {
-        title: "目录",
+        title: "内容",
     }
 }
 
