@@ -8,7 +8,7 @@ export const Hero = () => {
     const html = document.getElementsByTagName("html")[0];
     isDark[1](html.style.colorScheme === "dark");
     const observer = new MutationObserver(function (mutations) {
-      mutations.forEach(function (mutation) {
+      mutations.forEach(function () {
         isDark[1](html.style.colorScheme === "dark");
       });
     });

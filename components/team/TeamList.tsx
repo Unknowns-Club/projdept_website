@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, HStack, Spacer, VStack } from "@kuma-ui/core";
-import React from "react";
 import { MemberCard, NullCard } from "./MemberCard";
 
 export const TeamList = () => {
