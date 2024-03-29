@@ -34,7 +34,7 @@ export default {
         newWindow: true,
       },
       management: {
-        title: "集训队管理系统",
+        title: "ACM 集训队管理系统",
         href: "https://www.neauacm.cn/",
         newWindow: true,
       },
