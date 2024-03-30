@@ -12,7 +12,7 @@ export const newsList: NewsInfo[] = [
     content:
       "为检验 2024 年新生培训成果及进行 2024 年项目部预备队员选拔工作，进行本次考核。",
     img: "https://pic.neteralex.cn/iad/2024/03/30/6607a137d988e.webp",
-    time: "2024/3/31",
+    time: "2024/3/30",
     url: "/doc/train/2024_selection_info",
   },
   {
