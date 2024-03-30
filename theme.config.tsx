@@ -1,4 +1,3 @@
-import React from "react";
 import logoPic from "/public/imgs/logo.png";
 import Image from "next/image";
 import Link from "next/link";
