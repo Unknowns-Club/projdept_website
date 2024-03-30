@@ -1,4 +1,5 @@
-import { Box, css, Flex, Heading, Text, VStack } from "@kuma-ui/core";
+import { Box, Flex, Heading, Text, VStack } from "@kuma-ui/core";
+import Image from "next/image";
 
 export const NewsCard = ({
   title,
@@ -16,39 +17,47 @@ export const NewsCard = ({
   return (
     <>
       <Box
-        maxW={"50%"}
         minW={370}
-        flex="1"
         bg={"rgba(255,255,255,0.5)"}
         cursor={"pointer"}
         borderRadius={10}
         width="100%"
         boxShadow={"rgba(0,0,0,0.05) 0 2px 5px"}
-        onClick={() => window.open(url, "_blank")}
+        onClick={() => window.open(url, "_self")}
         p={16}
       >
-        <VStack gap={12}>
-          <Box>
-            <img
-              className={css`
-                border-radius: 10px;
-                box-shadow: rgba(0, 0, 0, 0.05) 0 2px 5px;
-              `}
-              src={img}
-              alt={title}
-            />
-          </Box>
-          <Heading fontSize={20}>{title}</Heading>
-          <Text color={"gray"}>{content}</Text>
-          <Flex justifyContent={"space-between"}>
+        <Flex justifyContent="space-between" gap={12}>
+          <Flex
+            flexDirection={"column"}
+            justifyContent={"space-between"}
+            gap={12}
+          >
+            <VStack gap={12}>
+              <Heading fontWeight={"bold"} fontSize={20}>
+                {title}
+              </Heading>
+              <Text color={"gray"}>{content}</Text>
+            </VStack>
+
             <Text color={"#2276a1"} fontSize={14}>
               {time}
             </Text>
-            <Text color={"#2276a1"} fontSize={14}>
-              查看详情
-            </Text>
           </Flex>
-        </VStack>
+          <Box display={["none", "block"]}>
+            <Image
+              src={img}
+              alt={title}
+              width={320}
+              height={180}
+              objectFit="fill"
+              style={{
+                borderRadius: 10,
+                height: "100%",
+                maxWidth: "240px",
+              }}
+            ></Image>
+          </Box>
+        </Flex>
       </Box>
     </>
   );
