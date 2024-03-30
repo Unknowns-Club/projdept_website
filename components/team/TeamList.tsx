@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, HStack, Spacer, VStack } from "@kuma-ui/core";
 import { MemberCard, NullCard } from "./MemberCard";
+import { teamList } from "../../content/team";
 
 export const TeamList = () => {
   return (
@@ -26,8 +27,9 @@ export const TeamList = () => {
             </Heading>
           </HStack>
           <HStack gap={8}>
-            <MemberCard clazz="微机2004" name="李子豪" />
-            <MemberCard clazz="软件2003" name="霍欣彤" />
+            {teamList.studentCoaches.map((it, index) => (
+              <MemberCard key={index} clazz={it.clazz} name={it.name} />
+            ))}
           </HStack>
           <Spacer h={16}></Spacer>
         </VStack>
@@ -42,7 +44,10 @@ export const TeamList = () => {
             </Heading>
           </HStack>
           <HStack gap={8}>
-            <MemberCard clazz="计科2104" name="陈玟杏" />
+            <MemberCard
+              clazz={teamList.teamLeader.clazz}
+              name={teamList.teamLeader.name}
+            />
           </HStack>
           <Spacer h={16}></Spacer>
         </VStack>
@@ -54,8 +59,9 @@ export const TeamList = () => {
             </Heading>
           </HStack>
           <HStack gap={8}>
-            <MemberCard clazz="计科2205" name="杨博宇" />
-            <MemberCard clazz="物联2202" name="韩玉坤" />
+            {teamList.teamAssistLeaders.map((it, index) => (
+              <MemberCard key={index} clazz={it.clazz} name={it.name} />
+            ))}
           </HStack>
           <Spacer h={16}></Spacer>
         </VStack>
@@ -68,8 +74,9 @@ export const TeamList = () => {
         </Heading>
       </HStack>
       <Flex gap={8} flexWrap={"wrap"}>
-        <MemberCard clazz="微机2102" name="李俊翔" />
-        <MemberCard clazz="计科2205" name="刘来熙" />
+        {teamList.fullMembers.map((it, index) => (
+          <MemberCard key={index} clazz={it.clazz} name={it.name} />
+        ))}
       </Flex>
       <Spacer h={16}></Spacer>
       {/*预备队员*/}
