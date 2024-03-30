@@ -1,11 +1,11 @@
-import { Flex } from "@kuma-ui/core";
+import { VStack } from "@kuma-ui/core";
 import { NewsCard } from "./NewsCard";
 import { newsList } from "../../content/news";
 
 export const NewsList = () => {
   return (
     <>
-      <Flex gap={16} flexWrap={"wrap"} width={"100%"}>
+      <VStack gap={16} width={"100%"}>
         {newsList.map((item, index) => (
           <NewsCard
             key={index}
@@ -16,7 +16,7 @@ export const NewsList = () => {
             time={item.time}
           />
         ))}
-      </Flex>
+      </VStack>
     </>
   );
 };
