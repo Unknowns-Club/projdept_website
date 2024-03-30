@@ -55,6 +55,20 @@ const config: DocsThemeConfig = {
   toc: {
     title: "内容",
   },
+  navigation: {
+    prev: true,
+    next: true,
+  },
+  gitTimestamp: () => <></>,
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: "日间模式",
+        dark: "夜间模式",
+        system: "自动切换",
+      };
+    },
+  },
 };
 
 export default config;
