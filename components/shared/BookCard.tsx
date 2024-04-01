@@ -1,4 +1,5 @@
 import { Box, css, Flex, HStack, Text, VStack } from "@kuma-ui/core";
+import { docRecommendList } from "../../content/doc-recommend";
 
 interface BookCardParams {
   title: string;
@@ -10,25 +11,16 @@ interface BookCardParams {
 export const BookCardList = () => {
   return (
     <Flex py={"1em"} flexWrap="wrap" width={"100%"} gap={"1em"}>
-      <BookCard
-        link="https://github.com/shimohq/chinese-programmer-wrong-pronunciation"
-        title="易发音错误的单词"
-        info="中国程序员容易发音错误的单词列表"
-        category="杂项"
-      />
-
-      <BookCard
-        link="https://developer.mozilla.org/zh-CN/docs/Learn"
-        title="MDN Web Docs"
-        info="来自 MDN 的 Web 开发教程"
-        category={"Web"}
-      />
-      <BookCard
-        link="https://developer.mozilla.org/zh-CN/docs/Learn"
-        title="MDN Web Docs"
-        info="来自 MDN 的 Web 开发教程"
-        category={"Web"}
-      />
+      {docRecommendList.map((it, index) => {
+        return (
+          <BookCard
+            link={it.link}
+            title={it.title}
+            info={it.info}
+            category={it.category}
+          />
+        );
+      })}
     </Flex>
   );
 };
@@ -47,6 +39,7 @@ const BookCard = ({ title, link, info, category }: BookCardParams) => {
         transition: transform 1s;
       `}
       _hover={{ transform: "scale(1.02)" }}
+      onClick={() => window.open(link, "_blank")}
     >
       <Flex
         h={"100%"}
