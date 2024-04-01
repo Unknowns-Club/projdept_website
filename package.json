@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@kuma-ui/next-plugin": "^1.2.1",
-    "@types/node": "20.11.30",
     "typescript": "^5.4.3"
   }
 }
