@@ -29,6 +29,12 @@ export const docRecommendList: docRecommendItem[] = [
     category: "项目",
     link: "https://learngitbranching.js.org/?locale=zh_CN",
   },
+  {
+    title: "动手学深度学习 第二版",
+    info: "面向中文读者的能运行、可讨论的深度学习教科书",
+    category: "AI",
+    link: "https://zh-v2.d2l.ai/",
+  },
 ];
 
 interface docRecommendItem {
