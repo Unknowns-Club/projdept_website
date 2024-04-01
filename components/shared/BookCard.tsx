@@ -25,7 +25,7 @@ export const BookCardList = () => {
   );
 };
 
-const BookCard = ({ title, link, info, category }: BookCardParams) => {
+export const BookCard = ({ title, link, info, category }: BookCardParams) => {
   return (
     <Box
       className={css`
