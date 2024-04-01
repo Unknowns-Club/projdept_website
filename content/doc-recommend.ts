@@ -23,6 +23,12 @@ export const docRecommendList: docRecommendItem[] = [
     category: "项目",
     link: "https://opensource.guide/zh-hans/",
   },
+  {
+    title: "Git 交互式教程",
+    info: "交互式的全面 Git 使用教程",
+    category: "项目",
+    link: "https://learngitbranching.js.org/?locale=zh_CN",
+  },
 ];
 
 interface docRecommendItem {
