@@ -50,7 +50,9 @@ export const BookCard = ({ title, link, info, category }: BookCardParams) => {
           <Text fontWeight="bold" color="var(--shiki-token-constant)">
             {title}
           </Text>
-          <Text color={"var(--shiki-color-text: #d1d1d1)"}>{info}</Text>
+          <Text fontSize={"0.9em"} color={"var(--shiki-color-text: #d1d1d1)"}>
+            {info}
+          </Text>
         </VStack>
         <HStack>
           <Box
