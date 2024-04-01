@@ -14,6 +14,7 @@ export const BookCardList = () => {
       {docRecommendList.map((it, index) => {
         return (
           <BookCard
+            key={index}
             link={it.link}
             title={it.title}
             info={it.info}
