@@ -71,8 +71,8 @@ const config: DocsThemeConfig = {
   banner: {
     key: "2024-selection",
     content: (
-      <a href="/doc/train/2024_selection_info" target="_self">
-        📢 2024年预备队员选拔已正式开始，点击查看通知 →
+      <a href="/doc/train/2024_selection_result" target="_self">
+        📢 2024年预备队员选拔工作已结束，查看结果公示 →
       </a>
     ),
   },

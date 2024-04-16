@@ -8,6 +8,13 @@ interface NewsInfo {
 
 export const newsList: NewsInfo[] = [
   {
+    title: "2024年预备队员选拔结果公示",
+    content: "2024年预备队员选拔工作顺利结束，现公示选拔结果。",
+    img: "https://pic.neteralex.cn/iad/2024/04/16/661de7a49683b.webp",
+    time: "2024/4/9",
+    url: "/doc/train/2024_selection_result",
+  },
+  {
     title: "2024年预备队员选拔正式开始",
     content:
       "为检验 2024 年新生培训成果及进行 2024 年项目部预备队员选拔工作，进行本次考核。",
