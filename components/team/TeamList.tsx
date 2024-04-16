@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, HStack, Spacer, VStack } from "@kuma-ui/core";
-import { MemberCard, NullCard } from "./MemberCard";
+import { MemberCard } from "./MemberCard";
 import { teamList } from "../../content/team";
 
 export const TeamList = () => {
@@ -87,7 +87,9 @@ export const TeamList = () => {
         </Heading>
       </HStack>
       <Flex gap={8} flexWrap={"wrap"}>
-        <NullCard info={"待 2024 年选拔"} />
+        {teamList.reservedMembers.map((it, index) => (
+          <MemberCard key={index} clazz={it.clazz} name={it.name} />
+        ))}
       </Flex>
       <Spacer h={16}></Spacer>
     </>
