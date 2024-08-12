@@ -1,6 +1,10 @@
-import {Heading} from "@kuma-ui/core";
+import {Flex, Heading} from "@kuma-ui/core";
 import {TeamList} from "../components/team/TeamList";
+import {Callout} from "nextra/components";
 
-<Heading fontSize={32} fontWeight="bold" my={16}>队伍组成(项目部)</Heading>
-
+<Heading fontSize={32} fontWeight="bold" my={16}>项目部队伍组成</Heading>
+<Callout type="info" emoji="ℹ️">
+    排名不分先后
+</Callout>
+<Flex py={"1em"}></Flex>
 <TeamList/>
