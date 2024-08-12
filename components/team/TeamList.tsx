@@ -88,7 +88,10 @@ export const TeamList = () => {
             </HStack>
             {
                 teamList.reservedMembers.length === 0
-                    ? <NullCard info={"等待2025年选拔"}/>
+                    ? <>
+                        <NullCard info={"等待2025年选拔"}/>
+                        <Spacer h={16}></Spacer>
+                    </>
                     : <>
                         <Flex gap={8} flexWrap={"wrap"}>
                             {teamList.reservedMembers.map((it, index) => (
