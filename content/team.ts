@@ -30,6 +30,7 @@ const fullMembers: MemberInfo[] = [
     {name: "曾艺豪", clazz: "微机2306"},
     {name: "潘玉凤", clazz: "微机2306"},
     {name: "赵羽诗", clazz: "微机2302"},
+    {name: "李抒憧", clazz: "微机2303"}
 ];
 
 const reservedMembers: MemberInfo[] = [];
